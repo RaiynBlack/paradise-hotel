@@ -1,0 +1,70 @@
+<section class="room-options">
+      <div class="room-card" data-room="Standard Room" data-price="120" data-img="images/standard-room.jpg">
+        <img src="images/standard.jpg" alt="Standard Room">
+        <div class="room-card-body">
+          <h3>Standard Room</h3>
+          <p>Cozy and affordable — perfect for solo travelers or couples.</p>
+          <p class="room-price">$120 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+
+      <div class="room-card" data-room="Deluxe Room" data-price="200" data-img="images/deluxe-room.jpg">
+        <img src="images/deluxe.png" alt="Deluxe Room">
+        <div class="room-card-body">
+          <h3>Deluxe Room</h3>
+          <p>Spacious room with premium amenities and a beautiful view.</p>
+          <p class="room-price">$200 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+
+      <div class="room-card" data-room="Luxury Suite" data-price="350" data-img="images/luxury-suite.jpg">
+        <img src="images/Luxury Suite.png" alt="Luxury Suite">
+        <div class="room-card-body">
+          <h3>Luxury Suite</h3>
+          <p>Ultimate comfort — lounge, king bed, and concierge perks.</p>
+          <p class="room-price">$350 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+
+
+
+
+          <div class="room-card" data-room="Standard Room" data-price="120" data-img="images/standard.jpg">
+  <img src="images/standard.jpg" alt="Standard Room">
+  <div class="room-card-body">
+    <h3>Standard Room</h3>
+    <p>Cozy and affordable — perfect for solo travelers or couples.</p>
+    <p class="room-price">$120 / night</p>
+    <button type="button" class="select-room">Select</button>
+  </div>
+</div>
+
+<div class="room-card" data-room="Deluxe Room" data-price="200" data-img="images/deluxe.png">
+  <img src="images/deluxe.png" alt="Deluxe Room">
+  <div class="room-card-body">
+    <h3>Deluxe Room</h3>
+    <p>Spacious room with premium amenities and a beautiful view.</p>
+    <p class="room-price">$200 / night</p>
+    <button type="button" class="select-room">Select</button>
+  </div>
+</div>
+
+<div class="room-card" data-room="Luxury Suite" data-price="350" data-img="images/Luxury Suite.png">
+  <img src="images/Luxury Suite.png" alt="Luxury Suite">
+  <div class="room-card-body">
+    <h3>Luxury Suite</h3>
+    <p>Ultimate comfort — lounge, king bed, and concierge perks.</p>
+    <p class="room-price">$350 / night</p>
+    <button type="button" class="select-room">Select</button>
+  </div>
+</div>
+
+
+
+
+
+
+
