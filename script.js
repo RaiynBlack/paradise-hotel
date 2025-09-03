@@ -186,3 +186,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selectButtons = document.querySelectorAll(".select-room");
+  const roomInput = document.getElementById("room");
+  const pricePerNight = document.getElementById("pricePerNight");
+  const roomPreviewImg = document.getElementById("selectedRoomImage");
+  const roomPreviewLabel = document.getElementById("selectedRoomLabel");
+
+  let selectedPrice = 0;
+
+  // When a user clicks "Select"
+  selectButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".room-card");
+      const roomName = card.getAttribute("data-room");
+      selectedPrice = parseInt(card.getAttribute("data-price"), 10);
+      const roomImg = card.getAttribute("data-img");
+
+      // Update form field
+      roomInput.value = roomName;
+
+      // Update live preview
+      roomPreviewImg.src = roomImg;
+      roomPreviewImg.alt = roomName;
+      roomPreviewLabel.textContent = `${roomName} — $${selectedPrice} / night`;
+
+      // Update price per night display
+      pricePerNight.textContent = `$${selectedPrice}`;
+
+      // Scroll to form so user can complete reservation
+      document.getElementById("bookingForm").scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
