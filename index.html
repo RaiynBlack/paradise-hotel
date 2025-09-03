@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hotel Paradise</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="booking.html">Book Room</a>
+      <a href="contact.html">Contact</a>
+      <a href="signin.html" id="authLink">Sign In</a>
+      <a href="#" id="signoutBtn" style="display:none;">Sign Out</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/lobby.jpeg" alt="Hotel Lobby" class="hero-img">
+    <div class="hero-text">
+      <h2>Welcome to Hotel Paradise</h2>
+      <p>Luxury, comfort & unforgettable experience</p>
+      <button onclick="window.location.href='booking.html'">Book Now</button>
+    </div>
+  </section>
+
+  <section class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-cards">
+      <div class="card">
+        <img src="images/single room.png" alt="Single Room">
+        <h3>Single Room</h3>
+        <p>Perfect for solo travelers. Cozy and affordable.</p>
+        <p class="price">$100 / Night</p>
+      </div>
+      <div class="card">
+        <img src="images/double room.png" alt="Double Room">
+        <h3>Double Room</h3>
+        <p>Ideal for couples or friends. Comfort meets style.</p>
+        <p class="price">$150 / Night</p>
+      </div>
+      <div class="card">
+        <img src="images/Luxury Suite.png" alt="Luxury Suite">
+        <h3>Luxury Suite</h3>
+        <p>Spacious suite with premium amenities and view.</p>
+        <p class="price">$250 / Night</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/pool.png" alt="Hotel Pool">
+      <img src="images/rest.jpeg" alt="Hotel Restaurant">
+      <img src="images/lounge.jpg" alt="Hotel Lounge">
+      <img src="images/spa.png" alt="Hotel Spa">
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>“Amazing service! I felt at home from the moment I arrived.”</p>
+        <strong>- Sarah J.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“The suite was luxurious, and the staff was very friendly.”</p>
+        <strong>- Michael K.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Best hotel experience ever. I’ll definitely come back!”</p>
+        <strong>- Linda W.</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hotel Paradise | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

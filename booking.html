@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Room - Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hotel Paradise</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html" class="active">Book Room</a>
+      <a href="contact.html">Contact</a>
+      <a href="signin.html" id="authLink">Sign In</a>
+      <a href="#" id="signoutBtn" style="display:none;">Sign Out</a>
+    </nav>
+  </header>
+
+  <!-- Hero banner -->
+  <section class="booking-hero">
+    <h2>Book Your Stay</h2>
+    <p>Select a room, pick your dates, and we’ll handle the rest.</p>
+  </section>
+
+  <main class="booking-container">
+    <!-- Room choices -->
+    <section class="room-options">
+      <div class="room-card" data-room="Standard Room" data-price="120" data-img="images/standard-room.jpg">
+        <img src="images/standard.jpg" alt="Standard Room">
+        <div class="room-card-body">
+          <h3>Standard Room</h3>
+          <p>Cozy and affordable — perfect for solo travelers or couples.</p>
+          <p class="room-price">$120 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+
+      <div class="room-card" data-room="Deluxe Room" data-price="200" data-img="images/deluxe-room.jpg">
+        <img src="images/deluxe.png" alt="Deluxe Room">
+        <div class="room-card-body">
+          <h3>Deluxe Room</h3>
+          <p>Spacious room with premium amenities and a beautiful view.</p>
+          <p class="room-price">$200 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+
+      <div class="room-card" data-room="Luxury Suite" data-price="350" data-img="images/luxury-suite.jpg">
+        <img src="images/Luxury Suite.png" alt="Luxury Suite">
+        <div class="room-card-body">
+          <h3>Luxury Suite</h3>
+          <p>Ultimate comfort — lounge, king bed, and concierge perks.</p>
+          <p class="room-price">$350 / night</p>
+          <button type="button" class="select-room">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking form + live preview -->
+    <section class="booking-and-preview">
+      <form id="bookingForm" class="booking-card">
+        <h3>Reservation Details</h3>
+
+        <label>Full Name
+          <input type="text" id="fullname" required />
+        </label>
+
+        <label>Email
+          <input type="email" id="email" required />
+        </label>
+
+        <label>Guests
+          <input type="number" id="guests" min="1" max="5" value="1" required />
+        </label>
+
+        <label>Check-in Date
+          <input type="date" id="checkin" required />
+        </label>
+
+        <label>Check-out Date
+          <input type="date" id="checkout" required />
+        </label>
+
+        <label>Selected Room
+          <input type="text" id="room" readonly placeholder="No room selected" />
+        </label>
+
+        <div class="estimate">
+          <div><strong>Nights:</strong> <span id="nights">0</span></div>
+          <div><strong>Price/Night:</strong> <span id="pricePerNight">$0</span></div>
+          <div class="total"><strong>Total:</strong> <span id="total">$0</span></div>
+        </div>
+
+        <button type="submit" class="book-btn">Confirm Booking</button>
+      </form>
+
+      <aside class="room-preview">
+        <img id="selectedRoomImage" src="images/placeholder-room.jpg" alt="Selected Room Preview" />
+        <p class="preview-text" id="selectedRoomLabel">No room selected</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hotel Paradise</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
