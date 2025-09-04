@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Hotel Paradise Logo">
-      <h1>Hotel Paradise</h1>
-    </div>
+    <h1>Hotel Paradise</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="booking.html">Book Room</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="signin.html" id="authLink">Sign In</a>
+      <a href="#" id="signoutBtn" style="display:none;">Sign Out</a>
     </nav>
   </header>
 
+  <!-- Contact Hero -->
   <section class="contact-hero">
-    <img src="images/contact.jpg" alt="Contact Us">
     <h2>Get in Touch</h2>
+    <p>We’re here to help. Reach out to us anytime!</p>
   </section>
 
-  <section class="contact-info">
-    <p>Email: info@hotelparadise.com</p>
-    <p>Phone: +123 456 789</p>
-    <p>Address: 123 Paradise Avenue, New York, USA</p>
-  </section>
+  <main class="contact-container">
+    <section class="contact-grid">
+      
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <h3>Send Us a Message</h3>
+        <label>Full Name
+          <input type="text" name="name" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+        <label>Subject
+          <input type="text" name="subject" required />
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
 
-  <section class="contact-form">
-    <h3>Send Us a Message</h3>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+      <!-- Contact Info -->
+      <aside class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong><br> 123 Paradise Avenue, Lagos, Nigeria</p>
+        <p><strong>Phone:</strong><br> +234 801 234 5678</p>
+        <p><strong>Email:</strong><br> info@hotelparadise.com</p>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.873456!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d77%3A0xabcdef!2sLagos!5e0!3m2!1sen!2sng!4v1234567890" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </aside>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Hotel Paradise. All Rights Reserved.</p>
+    <p>&copy; 2025 Hotel Paradise</p>
   </footer>
 </body>
 </html>
