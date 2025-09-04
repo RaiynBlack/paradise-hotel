@@ -6,6 +6,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Page Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <img src="images/logo.png" alt="Hotel Paradise Logo" class="loader-logo">
+    <h2>Hotel Paradise</h2>
+  </div>
+</div>
+
   <header>
     <h1>Hotel Paradise</h1>
     <nav>
@@ -83,5 +91,16 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    
+    // Keep loader visible for 5 seconds
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, 5000); // 5000ms = 5 seconds
+  });
+</script>
+
 </body>
 </html>

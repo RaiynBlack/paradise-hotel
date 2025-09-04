@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Hotel Paradise</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    
+  </style>
 </head>
 <body>
   <header>
@@ -28,13 +31,13 @@
     <section class="contact-grid">
       
       <!-- Contact Form -->
-      <form class="contact-form">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xyzdbjwv" method="POST">
         <h3>Send Us a Message</h3>
         <label>Full Name
           <input type="text" name="name" required />
         </label>
         <label>Email
-          <input type="email" name="email" required />
+          <input type="email" name="_replyto" required />
         </label>
         <label>Subject
           <input type="text" name="subject" required />
@@ -43,6 +46,7 @@
           <textarea name="message" rows="6" required></textarea>
         </label>
         <button type="submit" class="send-btn">Send Message</button>
+        <p id="form-message" class="form-message"></p>
       </form>
 
       <!-- Contact Info -->
@@ -65,5 +69,7 @@
   <footer>
     <p>&copy; 2025 Hotel Paradise</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

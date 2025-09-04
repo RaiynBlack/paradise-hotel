@@ -186,3 +186,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Handle form submission
+    const form = document.getElementById("contact-form");
+    const messageBox = document.getElementById("form-message");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const action = form.getAttribute("action");
+
+      messageBox.style.display = "block";
+      messageBox.textContent = "Sending...";
+      messageBox.className = "form-message";
+
+      try {
+        const response = await fetch(action, {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          messageBox.textContent = "✅ Message sent successfully!";
+          messageBox.className = "form-message success";
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Something went wrong. Try again.";
+          messageBox.className = "form-message error";
+        }
+      } catch (error) {
+        messageBox.textContent = "⚠️ Network error. Please try again.";
+        messageBox.className = "form-message error";
+      }
+    });
+
+
