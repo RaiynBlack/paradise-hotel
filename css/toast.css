@@ -49,3 +49,4 @@
 @keyframes fadeOut {
   to { opacity: 0; transform: translateX(120%); }
 }
+
