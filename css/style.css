@@ -137,7 +137,6 @@ footer {
 
 /* Booking Hero */
 .booking-hero {
-  background: url('images/lobby.jpeg') no-repeat center/cover;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -224,7 +223,7 @@ footer {
 .booking-card label { display: block; margin: 12px 0; font-weight: 600; }
 .booking-card input, .booking-card select {
   width: 100%;
-  padding: 11px 12px;
+  padding: 11px 1px;
   margin-top: 6px;
   border: 1px solid #cfd8e3;
   border-radius: 10px;
@@ -293,7 +292,6 @@ footer {
 
 /* Contact Hero */
     .contact-hero {
-      background: url('images/contact-banner.jpg') no-repeat center/cover;
       color: #fff;
       text-align: center;
       padding: 80px 20px;
@@ -343,7 +341,7 @@ footer {
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 12px;
+      padding: 12px 1px;
       margin-top: 6px;
       border: 1px solid #cfd8e3;
       border-radius: 10px;
