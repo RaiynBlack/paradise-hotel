@@ -221,4 +221,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    // Protect Dashboard - Only Admins
+const user = JSON.parse(localStorage.getItem("currentUser"));
 
+if (!user || user.role !== "admin") {
+  alert("Unauthorized access. Redirecting...");
+  window.location.href = "signin.html";
+}
+
+// Sign out logic
+document.getElementById("signoutBtn")?.addEventListener("click", () => {
+  localStorage.removeItem("currentUser");
+  window.location.href = "signin.html";
+});

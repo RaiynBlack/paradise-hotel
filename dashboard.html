@@ -3,36 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <!-- Page Loader -->
-<div id="loader">
-  <div class="loader-content">
-    <img src="images/Logo.png" alt="Hotel Paradise Logo" class="loader-logo">
-    <h2>Hotel Paradise</h2>
-  </div>
 </div>
-  <header>
-    <h1>Hotel Paradise - Admin Dashboard</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="booking.html">Book Room</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <section class="dashboard">
-    <h2>All Bookings</h2>
-    <div id="bookingsList"></div>
-    <img src="images/admin.jpg" alt="Admin Workspace" class="admin-img">
-  </section>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Hotel Admin</h2>
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Reservations</a>
+        <a href="#">Settings</a>
+      </nav>
+      <a href="signin.html"><button id="signoutBtn">Sign Out</button></a>
+    </aside>
 
-  <footer>
-    <p>&copy; 2025 Hotel Paradise | Admin View</p>
-  </footer>
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Admin Dashboard</h1>
+      </header>
 
-  <script src="script.js"></script>
+      <!-- Stats Cards -->
+      <section class="stats">
+        <div class="card">
+          <h3>Total Users</h3>
+          <p>1200</p>
+        </div>
+        <div class="card">
+          <h3>Reservations</h3>
+          <p>85</p>
+        </div>
+        <div class="card">
+          <h3>Available Rooms</h3>
+          <p>45</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$12,500</p>
+        </div>
+      </section>
+
+      <!-- Table -->
+      <section class="table-section">
+        <h2>Latest Reservations</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Guest</th>
+              <th>Room</th>
+              <th>Check-In</th>
+              <th>Check-Out</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Deluxe Suite</td>
+              <td>2025-09-05</td>
+              <td>2025-09-10</td>
+              <td><span class="status confirmed">Confirmed</span></td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Standard Room</td>
+              <td>2025-09-08</td>
+              <td>2025-09-12</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Michael Lee</td>
+              <td>Luxury Suite</td>
+              <td>2025-09-03</td>
+              <td>2025-09-07</td>
+              <td><span class="status cancelled">Cancelled</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+<script src="js/script.js"></script>
+<script src="js/preloader.js"></script>
 </body>
 </html>
