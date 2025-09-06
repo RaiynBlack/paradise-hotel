@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotel Paradise</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
 </head>
 <body>
   <!-- Page Loader -->
 <div id="loader">
   <div class="loader-content">
-    <img src="images/logo.png" alt="Hotel Paradise Logo" class="loader-logo">
+    <img src="images/Logo.png" alt="Hotel Paradise Logo" class="loader-logo">
     <h2>Hotel Paradise</h2>
   </div>
 </div>
@@ -91,16 +92,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    
-    // Keep loader visible for 5 seconds
-    setTimeout(() => {
-      loader.classList.add("hidden");
-    }, 5000); // 5000ms = 5 seconds
-  });
-</script>
+  <script src="preloader.js"></script>
 
 </body>
 </html>
